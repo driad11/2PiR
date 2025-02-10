@@ -1,7 +1,24 @@
 import streamlit as st
 
-st.title("Select Language")
-st.write("Choose a language from the sidebar to switch pages.")
+st.set_page_config(page_title="Select Language", layout="wide")
 
-# Sidebar navigation (Streamlit detects files in `pages/`)
-st.sidebar.success("Select a language from the sidebar.")
+# Hide the default sidebar navigation
+st.markdown("""
+    <style>
+        [data-testid="stSidebarNav"] {display: none;}
+    </style>
+""", unsafe_allow_html=True)
+
+st.title("Select Language")
+st.write("Choose a language from the dropdown below to switch pages.")
+
+# Custom page selector
+page = st.selectbox("Select Language", ["English", "Deutsch", "Magyar"])
+
+# Redirect users manually
+if page == "English":
+    st.switch_page("pages/english.py")
+elif page == "Deutsch":
+    st.switch_page("pages/deutsch.py")
+elif page == "Magyar":
+    st.switch_page("pages/magyar.py")
