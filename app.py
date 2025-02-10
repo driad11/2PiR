@@ -1,7 +1,5 @@
 import streamlit as st
 
-st.set_page_config(page_title="Select Language", layout="wide")
-
 # Hide the default sidebar navigation
 st.markdown("""
     <style>
@@ -12,10 +10,9 @@ st.markdown("""
 st.title("Select Language")
 st.write("Choose a language from the dropdown below to switch pages.")
 
-# Custom page selector
+# Custom navigation
 page = st.selectbox("Select Language", ["English", "Deutsch", "Magyar"])
 
-# Redirect users manually
 if page == "English":
     st.switch_page("pages/english.py")
 elif page == "Deutsch":
