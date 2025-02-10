@@ -1,12 +1,18 @@
 import streamlit as st
 
-st.title("Calculator test")
 
-# Get user input
-first = st.slider("Enter first number", min_value =0, max_value=100, value=50)
-second = st.slider("Enter second number", min_value =0, max_value=100, value=50)
+st.title("Select language, Sprach auswahl, válasszon nyelvet")
 
-# Perform calculation when user clicks button
-if st.button("Calculate Sum"):
-    result = first + second
-    st.success(f"Equals: {result}")
+#language selection
+language = st.selectbox("select language", ["english", "deutsch" ,"magyar"])
+
+#different pages based on selection
+if language == "english":
+    st.header("Welcome!")
+    st.write("this is the english version.")
+elif language == "deutsch":
+    st.header("Willkommen!")
+    st.write("dies ist die deutsche version.")
+elif language == "magyar":
+    st.header("Üdvözöljük!")
+    st.write("ez az oldal magyar verziója.")
