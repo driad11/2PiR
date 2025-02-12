@@ -1,7 +1,6 @@
 import streamlit as st
 
 st.title("Willkommen!")
-st.image("logo.jpg")
 st.write("""Angebot
 Egal, ob eine einfache Renovierung, ein Umbau, ein Anbau oder eine Sanierung: 
 Wir begleiten den Prozess vom Anfang der Planung bis zum Abschluss der Maßnahmen 
