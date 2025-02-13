@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 from PIL import Image
 
-img_contact_form = Image.open("images/logo")
+img_contact_form = Image.open("images/logo.jpg")
 
 
 st.title("Willkommen!")
