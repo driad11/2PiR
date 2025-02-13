@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-import Image
+from PIL import Image
 
 img_contact_form = Image.open("images/logo")
 
