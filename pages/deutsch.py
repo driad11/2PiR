@@ -19,8 +19,26 @@ st.write("""
      wir erstellen ein Bautagebuch als Dokumentation des Baufortschritts und zur Überwachung der Kosten
      bei Bedarf können wir einzelne Baumaßnahmen persönlich übernehmen """)
 
-with open("statics/logo.jpg", "rb") as file:
-    image_bytes = file.read()
+import streamlit as st
 
-st.image(image_bytes)
+st.markdown(
+    """
+    <style>
+        .logo-container {
+            position: absolute;
+            top: 10px;  /* Adjust top spacing */
+            left: 10px; /* Adjust left spacing */
+        }
+        .logo-container img {
+            width: 100px; /* Resize the image */
+            height: auto;
+        }
+    </style>
+    <div class="logo-container">
+        <img src="statics/logo.jpg">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
