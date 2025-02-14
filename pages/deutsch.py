@@ -19,6 +19,8 @@ st.write("""
      wir erstellen ein Bautagebuch als Dokumentation des Baufortschritts und zur Überwachung der Kosten
      bei Bedarf können wir einzelne Baumaßnahmen persönlich übernehmen """)
 
-st.image(os.path.join(os.getcwd(), "static", "logo.jpg" ))
+with open("static/logo.jpg", "rb") as file:
+    image_bytes = file.read()
 
+st.image(image_bytes)
 
