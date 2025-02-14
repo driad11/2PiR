@@ -2,20 +2,12 @@ import streamlit as st
 import os
 
 
-
-
 st.title("Willkommen!")
 
-with st.container():
-    st.write("---")
-    st.header("Angebot")
-    st.write("##")
-    image_column, text_column = ((1,2))
-    with image_column:
-        st.image(os.path.join(os.getcwd(), "static", "logo.jpg" ))
 
-    with text_column:
-        st.write("""
+st.image(os.path.join(os.getcwd(), "static", "logo.jpg" ))
+
+st.write("""
     Egal, ob eine einfache Renovierung, ein Umbau, ein Anbau oder eine Sanierung: 
     Wir begleiten den Prozess vom Anfang der Planung bis zum Abschluss der Maßnahmen 
     Wir unterstützen hinsichtlich der Entscheidung, welche Maßnahmen baulich sinnvoll, geboten und im Rahmen eines Budgets wirtschaftlich machbar sind. 
@@ -28,6 +20,8 @@ with st.container():
       die Bauüberwachung der Leistungen nach vorheriger Zieldefinition
      wir erstellen ein Bautagebuch als Dokumentation des Baufortschritts und zur Überwachung der Kosten
      bei Bedarf können wir einzelne Baumaßnahmen persönlich übernehmen """)
+
+
 
 
 
