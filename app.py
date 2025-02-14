@@ -1,5 +1,11 @@
 import streamlit as st
 
+
+#page config
+st.set_page_config(page_title="2PiR", layout="wide")
+
+
+
 # Hide the default sidebar navigation
 st.markdown("""
     <style>
