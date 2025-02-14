@@ -22,6 +22,6 @@ page = st.selectbox("Select Language", ["English", "Deutsch", "Magyar"])
 if page == "English":
     st.switch_page("pages/english.py")
 elif page == "Deutsch":
-    st.switch_page("pages/deutsch.py")
+    st.switch_page("deutsch.py")
 elif page == "Magyar":
     st.switch_page("pages/magyar.py")
