@@ -1,8 +1,7 @@
 import streamlit as st
-import requests
-from PIL import images
+import os
+##load assets##
 
-img_contact_form = Image.open("images/logo.jpg")
 
 
 st.title("Willkommen!")
@@ -13,7 +12,7 @@ with st.container():
     st.write("##")
     image_column, text_column = ((1,2))
     with image_column:
-        st.image(img_contact_form)
+        st.image(os.path.join(os.getcwd(), "static", "logo.jpg" ))
 
     with text_column:
         st.write("""
@@ -29,5 +28,9 @@ with st.container():
       die Bauüberwachung der Leistungen nach vorheriger Zieldefinition
      wir erstellen ein Bautagebuch als Dokumentation des Baufortschritts und zur Überwachung der Kosten
      bei Bedarf können wir einzelne Baumaßnahmen persönlich übernehmen """)
+
+
+
+
 
 
