@@ -19,7 +19,6 @@ st.write("""
      wir erstellen ein Bautagebuch als Dokumentation des Baufortschritts und zur Überwachung der Kosten
      bei Bedarf können wir einzelne Baumaßnahmen persönlich übernehmen """)
 
-import streamlit as st
 
 st.markdown(
     """
