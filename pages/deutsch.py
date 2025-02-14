@@ -20,24 +20,7 @@ st.write("""
      bei Bedarf können wir einzelne Baumaßnahmen persönlich übernehmen """)
 
 
-st.markdown(
-    """
-    <style>
-        .logo-container {
-            position: absolute;
-            top: 10px;  /* Adjust top spacing */
-            left: 10px; /* Adjust left spacing */
-        }
-        .logo-container img {
-            width: 100px; /* Resize the image */
-            height: auto;
-        }
-    </style>
-    <div class="logo-container">
-        <img src="statics/logo.jpg">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+image_path = os.path.abspath("statics/logo.jpg")
+st.image(image_path)
 
 
