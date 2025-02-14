@@ -34,7 +34,7 @@ st.markdown(
         }
     </style>
     <div class="logo-container">
-        <img src="statics/logo.jpg">
+        <img src="static/logo.jpg">
     </div>
     """,
     unsafe_allow_html=True
