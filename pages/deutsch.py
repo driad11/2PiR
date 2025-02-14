@@ -34,7 +34,7 @@ st.markdown(
             height: auto;
         }
     </style>
-    <div class="logo-container">
+    <div class=".logo-container">
         <img src="statics/logo.jpg">
     </div>
     """,
