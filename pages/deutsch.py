@@ -20,7 +20,7 @@ st.write("""
      bei Bedarf können wir einzelne Baumaßnahmen persönlich übernehmen """)
 
 
-image_path = os.path.abspath("statics/logo.jpg")
-st.image(image_path)
+
+st.image("statics/logo.jpg", width =100)
 
 
