@@ -1,5 +1,22 @@
 import streamlit as st
 
+st.markdown(
+    """
+    <style>
+        .logo-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;  /* Adjust size */
+            height: auto;
+        }
+    </style>
+    <img class="logo-container" src="https://raw.githubusercontent.com/driad11/websitetest/main/statics/logo.jpg">
+    """,
+    unsafe_allow_html=True
+)
+
+
 
 
 st.title("Willkommen!")
@@ -21,21 +38,6 @@ st.write("""
 
 
 
-st.markdown(
-    """
-    <style>
-        .logo-container {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 100px;  /* Adjust size */
-            height: auto;
-        }
-    </style>
-    <img class="logo-container" src="https://raw.githubusercontent.com/driad11/websitetest/main/statics/logo.jpg">
-    """,
-    unsafe_allow_html=True
-)
 
 
 
