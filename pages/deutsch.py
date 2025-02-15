@@ -5,7 +5,7 @@ st.markdown(
     <style>
         .logo-container {
             position: absolute;
-            top: 200px;
+            top: 10px;
             left: 10px;
             width: 100px;  /* Adjust size */
             height: auto;
