@@ -32,7 +32,7 @@ st.markdown(
             height: auto;
         }
     </style>
-    <img class="logo-container" src="statics/https://github.com/driad11/websitetest/statics/logo.jpg">
+    <img class="logo-container" src="https://github.com/driad11/websitetest/blob/main/statics/logo.jpg">
     """,
     unsafe_allow_html=True
 )
