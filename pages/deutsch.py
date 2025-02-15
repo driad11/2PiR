@@ -1,5 +1,5 @@
 import streamlit as st
-import os
+
 
 
 st.title("Willkommen!")
@@ -21,6 +21,26 @@ st.write("""
 
 
 
-st.image("statics/logo.jpg", width =100)
+st.markdown(
+    """
+    <style>
+        .logo-container {
+            position: absolute;
+            top: 10px;  /* Adjust top spacing */
+            left: 10px; /* Adjust left spacing */
+        }
+        .logo-container img {
+            width: 100px; /* Resize the image */
+            height: auto;
+        }
+    </style>
+    <div class="logo-container">
+        <img src="statics/logo.jpg">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 
 
