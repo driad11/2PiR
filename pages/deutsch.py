@@ -26,17 +26,13 @@ st.markdown(
     <style>
         .logo-container {
             position: absolute;
-            top: 10px;  /* Adjust top spacing */
-            left: 10px; /* Adjust left spacing */
-        }
-        .logo-container img {
-            width: 100px; /* Resize the image */
+            top: 10px;
+            left: 10px;
+            width: 100px;  /* Adjust size */
             height: auto;
         }
     </style>
-    <div class="logo-container">
-        <img src="statics/logo.jpg">
-    </div>
+    <img class="logo-container" src="statics/logo.jpg">
     """,
     unsafe_allow_html=True
 )
