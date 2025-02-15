@@ -7,7 +7,7 @@ st.markdown(
             position: absolute;
             top: 200px;
             left: 10px;
-            width: 200px;  /* Adjust size */
+            width: 100px;  /* Adjust size */
             height: auto;
         }
     </style>
