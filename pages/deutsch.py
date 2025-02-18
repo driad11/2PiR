@@ -1,21 +1,28 @@
 import streamlit as st
 
+logo_url = "https://raw.githubusercontent.com/driad11/websitetest/main/statics/logo.jpg"
+
 st.markdown(
-    """
+    f"""
     <style>
-        .logo-container {
+        /* Ensure Streamlit’s body allows absolute positioning */
+        [data-testid="stAppViewContainer"] > .main {{
+            position: relative;
+        }}
+
+        .logo {{
             position: absolute;
-            top: 1000px;
-            left: 1000px;
-            width: 10px;  /* Adjust size */
+            top: 10px;  /* Adjust this value */
+            right: 10px; /* Adjust this value */
+            width: 100px; /* Resize the logo */
             height: auto;
-        }
+            z-index: 1000; /* Ensure it's on top */
+        }}
     </style>
-    <img class="logo-container" src="https://raw.githubusercontent.com/driad11/websitetest/main/statics/logo.jpg">
+    <img src="{logo_url}" class="logo">
     """,
     unsafe_allow_html=True
 )
-
 
 
 
