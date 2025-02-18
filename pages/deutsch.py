@@ -5,20 +5,19 @@ logo_url = "https://raw.githubusercontent.com/driad11/websitetest/main/statics/l
 st.markdown(
     f"""
     <style>
-        /* Ensure Streamlit’s body allows absolute positioning */
         [data-testid="stAppViewContainer"] > .main {{
             position: relative;
         }}
 
-        /* Target the logo and force position updates */
         .logo-container {{
             position: absolute !important;
-            top: 0px !important;  /* Adjust as needed */
-            right: 0px !important; /* Adjust as needed */
-            transform: translate(-70, -70);
-            width: 120px !important; /* Resize the logo */
+            top: 10px !important;  /* Adjust as needed */
+            right: 10px !important; /* Adjust as needed */
+            width: 120px !important;
             height: auto !important;
-            z-index: 1000 !important; /* Ensure it's on top */
+            z-index: 1000 !important;
+            margin-top: -20px;  /* Move up */
+            margin-right: -30px; /* Move left */
         }}
     </style>
     <div class="logo-container">
