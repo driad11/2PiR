@@ -17,7 +17,7 @@ st.markdown(
             height: auto !important;
             z-index: 1000 !important;
             margin-top: -20px;  /* Move up */
-            margin-right: -30px; /* Move left */
+            margin-right: -90px; /* Move left */
         }}
     </style>
     <div class="logo-container">
