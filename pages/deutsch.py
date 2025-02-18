@@ -14,7 +14,7 @@ st.markdown(
             position: absolute;
             top: 10px;  /* Adjust this value */
             right: 10px; /* Adjust this value */
-            width: 100px; /* Resize the logo */
+            width: 1000px; /* Resize the logo */
             height: auto;
             z-index: 1000; /* Ensure it's on top */
         }}
