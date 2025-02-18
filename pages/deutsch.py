@@ -12,7 +12,7 @@ st.markdown(
 
         .logo {{
             position: absolute;
-            top: 10px;  /* Adjust this value */
+            top: 1000px;  /* Adjust this value */
             right: 10px; /* Adjust this value */
             width: 1000px; /* Resize the logo */
             height: auto;
