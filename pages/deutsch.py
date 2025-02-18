@@ -16,7 +16,7 @@ st.markdown(
             right: 10px; /* Adjust this value */
             width: 1000px; /* Resize the logo */
             height: auto;
-            z-index: 1000; /* Ensure it's on top */
+            z-index: 100; /* Ensure it's on top */
         }}
     </style>
     <img src="{logo_url}" class="logo">
