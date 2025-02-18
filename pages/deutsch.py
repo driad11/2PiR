@@ -15,7 +15,7 @@ st.markdown(
             position: absolute !important;
             top: 0px !important;  /* Adjust as needed */
             right: 0px !important; /* Adjust as needed */
-            transform: translate(10, -40);
+            transform: translate(60, -40);
             width: 120px !important; /* Resize the logo */
             height: auto !important;
             z-index: 1000 !important; /* Ensure it's on top */
