@@ -10,20 +10,22 @@ st.markdown(
             position: relative;
         }}
 
-        .logo {{
-            position: absolute;
-            top: 1000px;  /* Adjust this value */
-            right: 10px; /* Adjust this value */
-            width: 1000px; /* Resize the logo */
-            height: auto;
-            z-index: 100; /* Ensure it's on top */
+        /* Target the logo and force position updates */
+        .logo-container {{
+            position: absolute !important;
+            top: 10px !important;  /* Adjust as needed */
+            right: 10px !important; /* Adjust as needed */
+            width: 120px !important; /* Resize the logo */
+            height: auto !important;
+            z-index: 1000 !important; /* Ensure it's on top */
         }}
     </style>
-    <img src="{logo_url}" class="logo">
+    <div class="logo-container">
+        <img src="{logo_url}" width="120">
+    </div>
     """,
     unsafe_allow_html=True
 )
-
 
 
 st.title("Willkommen!")
