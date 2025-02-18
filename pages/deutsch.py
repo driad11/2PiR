@@ -14,7 +14,7 @@ st.markdown(
         .logo-container {{
             position: absolute !important;
             top: 10px !important;  /* Adjust as needed */
-            right: 30px !important; /* Adjust as needed */
+            right: 50px !important; /* Adjust as needed */
             width: 120px !important; /* Resize the logo */
             height: auto !important;
             z-index: 1000 !important; /* Ensure it's on top */
